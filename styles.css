@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 300px auto;
+}
+button {
+    padding: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    border: .5px solid gray;
+    opacity: .7;
+    cursor: pointer;
+}
+
+div {
+    animation: toTheLeft;
+    background-color: teal;
+}
+@keyframes toTheLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0.1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
